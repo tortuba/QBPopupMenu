@@ -62,7 +62,7 @@
 }
 
 
-+ (instancetype)itemWithTitle:(NSString *)title actionBlcok: (void(^)())action
++ (instancetype)itemWithTitle:(NSString *)title actionBlock: (void(^)())action
 {
     return [[self alloc] initWithTitle:title actionBlock:action];
 }
@@ -70,20 +70,20 @@
 {
     return [[self alloc] initWithImage:image actionBlock:action];
 }
-+ (instancetype)itemWithTitle:(NSString *)title image:(UIImage *)image actionBlcok: (void(^)())action
++ (instancetype)itemWithTitle:(NSString *)title image:(UIImage *)image actionBlock: (void(^)())action
 {
-    return [[self alloc] initWithTitle:title image:image actionBlcok:action];
+    return [[self alloc] initWithTitle:title image:image actionBlock:action];
 }
 
 - (instancetype)initWithTitle:(NSString *)title actionBlock: (void(^)())action
 {
-    return [self initWithTitle:title image:nil actionBlcok:action];
+    return [self initWithTitle:title image:nil actionBlock:action];
 }
 - (instancetype)initWithImage:(UIImage *)image actionBlock: (void(^)())action
 {
-    return [self initWithTitle:nil image:image actionBlcok:action];
+    return [self initWithTitle:nil image:image actionBlock:action];
 }
-- (instancetype)initWithTitle:(NSString *)title image:(UIImage *)image actionBlcok: (void(^)())action
+- (instancetype)initWithTitle:(NSString *)title image:(UIImage *)image actionBlock: (void(^)())action
 {
     self = [super init];
     if (self) {

@@ -25,13 +25,13 @@
 - (instancetype)initWithImage:(UIImage *)image target:(id)target action:(SEL)action;
 - (instancetype)initWithTitle:(NSString *)title image:(UIImage *)image target:(id)target action:(SEL)action;
 
-+ (instancetype)itemWithTitle:(NSString *)title actionBlcok: (void(^)())action;
++ (instancetype)itemWithTitle:(NSString *)title actionBlock: (void(^)())action;
 + (instancetype)itemWithImage:(UIImage *)image actionBlock: (void(^)())action;
-+ (instancetype)itemWithTitle:(NSString *)title image:(UIImage *)image actionBlcok: (void(^)())action;
++ (instancetype)itemWithTitle:(NSString *)title image:(UIImage *)image actionBlock: (void(^)())action;
 
 - (instancetype)initWithTitle:(NSString *)title actionBlock: (void(^)())action;
 - (instancetype)initWithImage:(UIImage *)image actionBlock: (void(^)())action;
-- (instancetype)initWithTitle:(NSString *)title image:(UIImage *)image actionBlcok: (void(^)())action;
+- (instancetype)initWithTitle:(NSString *)title image:(UIImage *)image actionBlock: (void(^)())action;
 
 
 @end
