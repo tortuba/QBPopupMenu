@@ -99,7 +99,7 @@
         self.item.actionBlock();
     }
     if (self.item.target && self.item.action) {
-        [self.item.target performSelector:self.item.action withObject:nil afterDelay:0];
+        [self.item.target performSelector:self.item.action withObject:self.item.target afterDelay:0];
     }
     
     // Close popup menu
